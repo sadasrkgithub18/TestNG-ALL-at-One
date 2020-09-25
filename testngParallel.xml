@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+     <test name="Test1"> 
+        <parameter name = "t1" value="firefox"> </parameter>
+     
+        <classes>
+          <class name="parallelExecution.ParallelExec"/>
+        </classes>
+    </test> <!-- Test -->
+  
+  <test name="Test2">
+   <parameter name="t1" value="chrome"> </parameter>
+     
+    <classes>
+      <class name="parallelExecution.ParallelExec"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
